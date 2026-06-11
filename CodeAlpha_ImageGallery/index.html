@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Nature & Lifestyle Gallery</h1>
+        <p>Explore beautiful collections of Nature, Travel, Food and Animals</p>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat-card">
+            <h2>12+</h2>
+            <p>Images</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>4</h2>
+            <p>Categories</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>100%</h2>
+            <p>Responsive</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('travel')">Travel</button>
+        <button onclick="filterImages('food')">Food</button>
+        <button onclick="filterImages('animal')">Animals</button>
+    </div>
+
+    <div class="gallery">
+
+        <!-- Nature -->
+        <div class="image nature">
+            <span class="tag">🌿 Nature</span>
+            <img src="images/nature1.jpg" alt="">
+        </div>
+
+        <div class="image nature">
+            <span class="tag">🌿 Nature</span>
+            <img src="images/nature2.jpg" alt="">
+        </div>
+
+        <div class="image nature">
+            <span class="tag">🌿 Nature</span>
+            <img src="images/nature3.jpg" alt="">
+        </div>
+
+        <!-- Travel -->
+        <div class="image travel">
+            <span class="tag">✈️ Travel</span>
+            <img src="images/travel1.jpg" alt="">
+        </div>
+
+        <div class="image travel">
+            <span class="tag">✈️ Travel</span>
+            <img src="images/travel2.jpg" alt="">
+        </div>
+
+        <div class="image travel">
+            <span class="tag">✈️ Travel</span>
+            <img src="images/travel3.jpg" alt="">
+        </div>
+
+        <!-- Food -->
+        <div class="image food">
+            <span class="tag">🍕 Food</span>
+            <img src="images/food1.jpg" alt="">
+        </div>
+
+        <div class="image food">
+            <span class="tag">🍕 Food</span>
+            <img src="images/food2.jpg" alt="">
+        </div>
+
+        <div class="image food">
+            <span class="tag">🍕 Food</span>
+            <img src="images/food3.jpg" alt="">
+        </div>
+
+        <!-- Animals -->
+        <div class="image animal">
+            <span class="tag">🐾 Animal</span>
+            <img src="images/animal1.jpg" alt="">
+        </div>
+
+        <div class="image animal">
+            <span class="tag">🐾 Animal</span>
+            <img src="images/animal2.jpg" alt="">
+        </div>
+
+        <div class="image animal">
+            <span class="tag">🐾 Animal</span>
+            <img src="images/animal3.jpg" alt="">
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Shakthi Devi Kalyani T</p>
+        <p>CodeAlpha Frontend Development Internship Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
