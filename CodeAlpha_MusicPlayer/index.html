@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="music-player">
+
+        <h1>🎵 Music Player</h1>
+
+        <img src="images/cover1.jpg" id="cover" class="cover">
+
+        <h2 id="title">Lofi Night</h2>
+        <p id="artist">Chill Beats Collection</p>
+
+        <audio id="audio">
+            <source src="songs/song1.mp3" type="audio/mpeg">
+        </audio>
+
+        <input type="range" value="0" id="progress">
+
+        <div class="time">
+            <span id="currentTime">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+
+        <div class="controls">
+
+            <button id="prev">
+                <i class="fas fa-backward"></i>
+            </button>
+
+            <button id="play">
+                <i class="fas fa-play"></i>
+            </button>
+
+            <button id="next">
+                <i class="fas fa-forward"></i>
+            </button>
+
+        </div>
+
+        <div class="playlist">
+
+            <h3>Playlist</h3>
+
+            <ul>
+
+                <li id="song0" onclick="loadSong(0)">
+                    🎵 Lofi Night
+                </li>
+
+                <li id="song1" onclick="loadSong(1)">
+                    🎵 Mountain Chill
+                </li>
+
+                <li id="song2" onclick="loadSong(2)">
+                    🎵 Rainy Relaxation
+                </li>
+
+            </ul>
+
+        </div>
+
+        <p class="footer">
+            CodeAlpha Internship Project
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
